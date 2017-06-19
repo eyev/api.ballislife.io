@@ -1,6 +1,5 @@
 ![ballislife.io Logo](http://ballislife.io/assets/img/logo.png)
 
-[![Nest Logo](http://kamilmysliwiec.com/public/nest-logo.png)](http://kamilmysliwiec.com/)
 
 ## Installation
 
@@ -13,3 +12,9 @@ $ npm install
 ```
 $ npm run start
 ```
+
+## Endpoints
+
+`/game/detail/:date/:game_id` - returns game data for specific game
+
+`/game/preview/:date` - returns game previews for specific date
