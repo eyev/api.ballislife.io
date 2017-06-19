@@ -25,7 +25,7 @@ export class GameController {
             gameId: req.params.gameId
         }).then(gameDetail => { 
             res.status(HttpStatus.OK)
-                .json(<Game[]>this.gameFactory.createGameDetail(gameDetail));
+                .json(this.gameFactory.createGameDetail(gameDetail));
         }).catch(error => {
             res.status(HttpStatus.NO_CONTENT)
           });
@@ -35,12 +35,10 @@ export class GameController {
         data.scoreboard({
             date: req.params.date
         }).then(gamePreview => {
-            console.log('aye?');
             res.status(HttpStatus.OK)
                 .json(this.gameFactory.createGamePreview(gamePreview))
         }).catch(error => { 
             res.status(HttpStatus.NO_CONTENT)
         })
-        // return new GamePreview();
     }
 }

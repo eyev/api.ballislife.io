@@ -44,7 +44,6 @@ export class GameFactory {
 
     // /game/preview/:date
     createGamePreview(dirtyGames): GamePreview[] {
-        console.log(dirtyGames);
         let games = dirtyGames.games.map(game => {
             return {
                 id: game.gameId,
@@ -59,8 +58,8 @@ export class GameFactory {
             }
         });
         return games;
-
     }
+    
     // sifts through response and gets players for a specific team
     private getPlayers(teamId, activePlayers) {
         let players = _.filter(activePlayers, player => player['teamId'] === teamId);
