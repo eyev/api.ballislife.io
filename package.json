@@ -1,7 +1,7 @@
 {
-  "name": "nest-typescript-starter",
+  "name": "api-ballislife-io",
   "version": "1.0.0",
-  "description": "Nest TypeScript starter repository",
+  "description": "Node.JS api written with Nest.js, nba.js, Typescript",
   "license": "MIT",
   "scripts": {
     "start": "node index.js",
@@ -14,6 +14,12 @@
     "@nestjs/microservices": "*",
     "@nestjs/testing": "*",
     "@nestjs/websockets": "*",
+    "@types/lodash": "^4.14.65",
+    "@types/moment": "^2.13.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
+    "nba.js": "^0.4.1",
     "redis": "^2.7.1",
     "reflect-metadata": "^0.1.10",
     "rxjs": "^5.4.0",
